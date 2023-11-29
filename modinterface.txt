@@ -1,0 +1,6 @@
+
+DrawCube
+
+pass in the texture,x,y,z!
+
+and it should make a custom block!

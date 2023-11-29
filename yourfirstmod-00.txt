@@ -1,1 +1,23 @@
+Hello this is the first part of modding IslandWorld! I'd first check out some info to read licence info for lua4j and also for other things.
 
+Step 1:
+
+Make a (yourmodname).rb 
+
+IslandWorld's ModInterface uses the game directory which should be for UNIX like systems (Linux, BSDs) in .local and in the islandworld folder, for windows it should be in apdata and under IslandWolrd in mods. 
+
+Step 2:
+
+Open your mod in any IDE that supports Ruby or text editor. 
+
+This mod will be simple just printing a line to Java's console.
+
+Step 3:
+
+Now type in puts, puts put in the terminal, it is like System.out.println in Java or Console.WriteLine in C#, or print in lua.
+
+Step 4:
+
+You're done save.
+
+To see if your mod worked! Run it in the CMD for windows or your terminal for linux java -jar islandworld.jar and look and it should say whatever decied to "put"..

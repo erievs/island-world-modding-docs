@@ -17,7 +17,9 @@ For UNIX like opreating systems
 
 /home/(yourusername)/.local/islandworld/mods/
 
-(must be .rb or.iwmod or .ismodformat!)
+(must be .rb or.iwmod or .iwmodformat!)
+
+Note: It doesn't really matter the name since it's all ruby!
 
 Windows:
 

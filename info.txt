@@ -10,6 +10,7 @@ you plan on making a custom jar mod), there are possiblities for having
 **native** (native in the sense it is running directly in game the game
 is programmed in java it is 100% NOT native) 
 
+We Currrently Support Ruby 3.1!
 
 Mods are looked for in:
 

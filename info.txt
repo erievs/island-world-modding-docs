@@ -1,1 +1,28 @@
+CREDIT(S)
+
+Maguro
+
+https://github.com/maguro/lua4j
+
+[Apache License Version 2.0, January 2004, http://www.apache.org/licenses/]
+____________________________________________________________________________
+
+All mods must be created with the LUA programming lanauge for now (unless 
+you plan on making a custom jar mod), there are possiblities for having
+**native** (native in the sense it is running directly in game the game
+is programmed in java it is 100% NOT native) 
+
+
+Mods are looked for in:
+
+For UNIX like opreating systems
+
+/home/(yourusername)/.local/islandworld/mods/
+
+(must be .lua!!)
+
+Windows:
+
+APPDATA
+
 

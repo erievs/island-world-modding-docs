@@ -1,20 +1,32 @@
 CREDIT(S)
 
-JRuby
+Apache Groovy
 
-https://github.com/jruby/jruby/blob/master/LICENSE.RUBY
+https://groovy-lang.org/
+
+https://github.com/apache/groovy/blob/master/LICENSE
+
+https://github.com/apache/groovy
+
+[Apache License Version 2.0, January 2004
+http://www.apache.org/licenses/ TERMS AND 
+CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION]
 ____________________________________________________________________________
 
-All mods must be created with the Ruby programming lanauge for now (unless 
-you plan on making a custom jar mod), there are possiblities for having
-**native** (native in the sense it is running directly in game the game
-is programmed in java it is 100% NOT native) 
+All mods must be created with the Groovy programming language for now (unless 
+you plan on making a custom jar mod), there are possibilities for having
+**native** (native in the sense it is running directly in game, the game
+is programmed in Java it is 100% NOT native). However, as Groovy is a 
+direct JVM language, rather than a language that is not based on the JVM
+it shouldn't be very much slower!
 
 We Currrently Support Ruby 3.1!
 
 Mods are looked for in:
 
 For UNIX like opreating systems
+
+[control h in your home directory]
 
 /home/(yourusername)/.local/islandworld/mods/
 
@@ -24,6 +36,17 @@ Note: It doesn't really matter the name since it's all ruby!
 
 Windows:
 
+[Windows r, %appdata%]
+
 APPDATA
+
+Mac OS
+
+Application Support 
+
+
+Aliases To Make Using Groovy Easier
+
+int - int is an alias for def (this is a dynamically typed language and how Apache implemented it you use def for strings, integers and such this is to make it a little easier for the programmed used to ruby and such)
 
 

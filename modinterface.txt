@@ -1,6 +1,53 @@
 
-DrawCube
 
-pass in the texture,x,y,z!
 
-and it should make a custom block!
+Aliases/Bindings
+
+int - int is an alias for def (this is a dynamically typed language and how Apache implemented it you use def for strings, 
+integers and such this is to make it a little easier for the programmed used to ruby and such)
+
+puts - puts is an alias for println, this is for people who are used  to ruby.
+
+Console.WriteLine (may be removed as it is causing some issues for some reason) - it is an alais for println, this is for people who are used to C Sharp
+
+
+Methods Useful For Modding
+
+SetBlock Method
+
+
+**world.setBlock(x, y, z, (block))**
+
+Use: Spawns a block somewhere in the world by passing in
+x,y,z cordnaites and the block you want.
+
+How To Use
+
+1. Define a block with the block you want 
+
+def myBlock = new blocks.Wood(x, y, z, textureIndex)
+
+2. Pass it in world.setBlock
+
+world.setBlock(x, y, z, myBlock)
+
+3. Speficy the x,y,z you want in the world
+
+world.setBlock(1, 2, 3, myBlock)
+
+You're good!
+
+
+CreateBlock
+
+**COMING SOON**
+
+block.CreateBlock("","",x,y,z)
+
+Use: Creating a custom block, speficy the texture, the name, the x,y,z 
+cornaites of were you want to spawn it. (For now, may be used with
+setblock instead of directly ;ater on).
+
+**ACCEPTS: PNGS and JPEGS**
+
+**/TODO**

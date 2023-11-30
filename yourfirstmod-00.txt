@@ -1,23 +1,64 @@
-Hello this is the first part of modding IslandWorld! I'd first check out some info to read licence info for lua4j and also for other things.
+Hello, this is the first part of modding IslandWorld! I'd first check out some info to read licence info for lua4j and also for other things.
+
+For those who may not know Groovy is,
+
+"Groovy is a dynamic, object-oriented programming language for the Java platform. It is based on the Java Platform, so it runs on the same JVM and integrates seamlessly with existing Java code. Groovy is designed to be more concise, expressive, and productive than Java, with features like closures, operator overloading, and multiple dispatch. It is also a metaprogramming language, allowing you to write code that manipulates other code. Groovy is used for a wide variety of applications, including web development, enterprise applications, and scripting."
+
+(Thank you Google Bard)
+
+I choose groovy because it is the easiest scripting lanauage to do with my game engine which is in Java.
+
+
+
+Check info.txt for Groovy's copright notices)
+
+
 
 Step 1:
 
-Make a (yourmodname).rb 
+Make a (yourmodname).groovy (check info more extensions, however be aware they're still groovy) 
 
-IslandWorld's ModInterface uses the game directory which should be for UNIX like systems (Linux, BSDs) in .local and in the islandworld folder, for windows it should be in apdata and under IslandWolrd in mods. 
+IslandWorld's ModInterface uses the game directory which should be for UNIX like systems (Linux, BSDs) in .local and in the IslandWorld folder, for windows it should be in appdata and under IslandWorld in mods. For macOS, it is in application support.
+
+(Control H Linux and BSDs and such , as . folders are hidden)
+
+(window r -> %appdata% for windows)
+
+(macOS I do not know of any shortcuts)
+
 
 Step 2:
 
-Open your mod in any IDE that supports Ruby or text editor. 
+Open your mod in any IDE that supports Groovy (Eclipse with extensions is recommended) or pretty much any text editor. 
 
 This mod will be simple just printing a line to Java's console.
 
 Step 3:
 
-Now type in puts, puts put in the terminal, it is like System.out.println in Java or Console.WriteLine in C#, or print in lua.
+Now type [println("Hello world!")] (The brackets are only there for show do not include them!)
+
+In the mod file (the .groovy), it is like System.out.println in Java (since well it is println!) or Console.WriteLine in C#, or print in Lua.
+
+It will print your text to terminal (with a line break, hence println)
+
+
 
 Step 4:
 
 You're done save.
 
-To see if your mod worked! Run it in the CMD for windows or your terminal for linux java -jar islandworld.jar and look and it should say whatever decied to "put"..
+To see if your mod worked! Run it in the CMD for windows or your terminal for Linux Java -jar islandworld.jar and look, and it should say whatever decided to  print to the terminal.
+
+
+Notes:
+
+They're a couple of aliases available for println, it is not recommanded to use them as it might lead you to
+do bad habits, but if you don't care.
+
+"puts" can be used as a binding for println
+
+"Console.Writeln" can be used as a binding for println
+
+Random Stuff I Thought Of:
+
+Print is probably because of how terminals used to use printed paper instead of screens.

@@ -44,9 +44,3 @@ Mac OS
 
 Application Support 
 
-
-Aliases To Make Using Groovy Easier
-
-int - int is an alias for def (this is a dynamically typed language and how Apache implemented it you use def for strings, integers and such this is to make it a little easier for the programmed used to ruby and such)
-
-

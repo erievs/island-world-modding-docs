@@ -8,46 +8,44 @@ integers and such this is to make it a little easier for the programmed used to 
 
 puts - puts is an alias for println, this is for people who are used  to ruby.
 
-Console.WriteLine (may be removed as it is causing some issues for some reason) - it is an alais for println, this is for people who are used to C Sharp
+Console.WriteLine (maybe removed as it is causing some issues for some reason) - it is an alias for println, this is for people who are used to C Sharp
 
 
-Methods Useful For Modding
+Modding Methods and Such
 
-SetBlock Method
+spawnBlock()
 
+This method spawns a block which is in game (Think wood, grass, any block in game).
 
-**world.setBlock(x, y, z, (block))**
+1. You first need to PASS a block.
 
-Use: Spawns a block somewhere in the world by passing in
-x,y,z cordnaites and the block you want.
+spawnBlock("Grass", , ,)
 
-How To Use
+[This is a list of blocks as of 1/12/2023 may or may not be updated: Grass, Wood, Leaf, Nexus_Grass, Air (Doesn't do anything), Stone,]
 
-1. Define a block with the block you want 
+[Note: It must be surrounded by parentheses, this is so it doesn't confuse groovy into thinking it's a method or something!]
 
-def myBlock = new blocks.Wood(x, y, z, textureIndex)
+2. Second, you need to pass in the coordinates of the block you want to spawn. (X,Y,Z).
 
-2. Pass it in world.setBlock
-
-world.setBlock(x, y, z, myBlock)
-
-3. Speficy the x,y,z you want in the world
-
-world.setBlock(1, 2, 3, myBlock)
-
-You're good!
+spawnBlock("Grass",1 ,2 ,3)
 
 
-CreateBlock
+constructBlock()
 
-**COMING SOON**
+This method creates a custom block.
 
-block.CreateBlock("","",x,y,z)
+1. You need to pass the position and texture index and a name. (You can ignore the texture index as it doesn't affect anything and is just required by how we load assets, so just do 0)
 
-Use: Creating a custom block, speficy the texture, the name, the x,y,z 
-cornaites of were you want to spawn it. (For now, may be used with
-setblock instead of directly ;ater on).
+constructBlock("MyCoolBlock", x, y, z, 0,)
 
-**ACCEPTS: PNGS and JPEGS**
+2. Pass in your texture (it will by default look in the mod folder, however you can make a folder)
 
-**/TODO**
+constructBlock("MyCoolBlock", x, y, z , 0, "albert.png" ).
+
+3. Now pass in your texture cords and size.
+
+constructBlock("MyCoolBlock", x, y, z, 0, "albert.png", texture-x, texture-y, texture-size-x, texture-size-y)
+
+[Note: 0,0 is fine if its just one image]
+
+

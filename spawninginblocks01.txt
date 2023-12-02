@@ -16,7 +16,7 @@ Leaf
 
 Dirt
 
-So we will be using the spawnBlock() method!
+1. So we will be using the spawnBlock() method!
 
 spawnBlock("")
 
@@ -24,7 +24,7 @@ So pass in the block!
 
 spawnBlock("Grass") [In my case, I wanted to spawn a block]
 
-Then pass in our cords!
+2. Then pass in our cords!
 
 spawnBlock("Grass", 4, 2, 0) 
 

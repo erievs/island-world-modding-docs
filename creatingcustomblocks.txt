@@ -1,0 +1,39 @@
+This is part 3 of this modding guide, and time to actually add something to the game. This is for how to make a custom block!
+
+Accepted Formats to my knowledge:
+
+.PNG
+
+.JPEG
+
+.JPG
+
+Now we will need a texture, like I said it supports all of these formats above (maybe more
+whatever java/lwjgl/groovy supports). Now it is recommanded to use  a texture atlas to improve performance (google it, however it may not do much since we are loading each script which I don't think would save calls to the kernel). 
+
+So for example, if I have 7 blocks in my mod combine it's using a tool like [https://www.codeandweb.com/tp-online].
+
+We use:
+
+constructBlock()
+
+1. Passing a name for our block!
+
+constructBlock("IslandWorldIsAGameBlock42069_XL") (Use underscores for spaces!)
+
+2. Pass your coordinates in which you want to spawn the block!
+
+constructBlock("IslandWorldIsAGameBlock42069_XL",  1, 2 , 3)
+
+3.  Pass in the path, it will look for it in the mods' folder, so if I pass in for example a.png, so it will look in the game directory + mods folder. 
+
+constructBlock("IslandWorldIsAGameBlock42069_XL",  1, 2 , 3, "notgeorgewbushesfeetpics.png") 
+
+4. Now pass in the texture cores, if you're not using an atlas it just uses 0,0, however if for you're using an atlas use the cords for the area of the atlas you want it to be. Then specific the texture's size, I'd use either 32x32 or 16x16, but any would work that is an exponent of 2 (think 2^1, 2x2, 2^2, 4x4, etc).
+
+constructBlock("IslandWorldIsAGameBlock42069_XL",  1, 2 , 3, "notgeorgewbushesfeetpics.png", 0, 0, 32, 32)
+
+You're done enjoy! 
+
+
+

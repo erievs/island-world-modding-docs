@@ -1,0 +1,33 @@
+Hello, this is part 2 of this modding series, now last part we just printed some text to the console, this part will teach you how to spawn in a block!
+
+So we need the block we want, here is a list of blocks in the game as of 1/12/2023:
+
+Nexus_Grass 
+
+Wood
+
+Grass 
+
+Stone
+
+Air (It doesn't do anything)
+
+Leaf 
+
+Dirt
+
+So we will be using the spawnBlock() method!
+
+spawnBlock("")
+
+So pass in the block!
+
+spawnBlock("Grass") [In my case, I wanted to spawn a block]
+
+Then pass in our cords!
+
+spawnBlock("Grass", 4, 2, 0) 
+
+Now we are done! 
+
+It should automatically load if it is saved as .groovy (or any other supported extensions) ! 
